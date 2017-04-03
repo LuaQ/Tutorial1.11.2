@@ -15,6 +15,7 @@ public class Tutorial {
 	public static final String MOD_NAME = "Tutorial Mod";
 	public static final String VERSION = "@VERSION@";
 	public static final String DEPENDENCIES = "required-after:forge@[13.20.0.2228,)";
+	public static final String RESOURCE_PREFIX = MOD_ID + ":";
 	
 	@Instance(MOD_ID)
 	public static Tutorial instance;
@@ -24,19 +25,19 @@ public class Tutorial {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-	
+
 		proxy.preInit(event);
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-	
+
 		proxy.init(event);
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-	
+
 		proxy.postInit(event);
 	}
 }
